@@ -1,68 +1,70 @@
-import Image from "next/image";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-import { logos } from "@/data";
+import { skillsList } from "@/data";
 
 function LogoGroupSection() {
-    return (
-        <section>
-            {/* Desktop */}
-            <div className="hidden md:block h-full">
-                {
-                    <InfiniteMovingCards
-                        items={logos.map((logo, idx) => (
-                            <Image
-                                key={logo}
-                                src={logo}
-                                alt={`${logo}_${idx + 1}`}
-                                height={48}
-                                width={145.55}
-                            />
-                        ))}
-                        speed="normal"
-                    />
-                }
+  return (
+    <section className="2xl:container-layout">
+      {/* Desktop  */}
+      <div className="hidden md:block h-full">
+        {/*  border-t-[0.1px] border-dark-purple/60 pt-4*/}
+        <InfiniteMovingCards
+          pauseOnHover={false}
+          items={skillsList.map(({ icon: Icon, name }) => (
+            <div
+              key={name}
+              className="h-[60px] w-[60px] bg-[#ebebeb] text-dark-purple rounded-md flex-center group"
+            >
+              <div className="group-hover:text-light-purple transition-all duration-300">
+                <Icon size={48} aria-label={name} />
+              </div>
             </div>
+          ))}
+          speed="normal"
+        />
+      </div>
 
-            {/* Mobile */}
-            <div className="md:hidden flex flex-col gap-y-6 my-5">
-                <InfiniteMovingCards
-                    items={logos
-                        .filter(
-                            (_, index) => index < Math.ceil(logos.length / 2)
-                        )
-                        .map((logo, idx) => (
-                            <Image
-                                key={logo}
-                                src={logo}
-                                alt={`${logo}_${idx + 1}`}
-                                height={46}
-                                width={125.55}
-                                className="h-[46px] w-[125px]"
-                            />
-                        ))}
-                    speed="normal"
+      {/* Mobile */}
+      <div className="md:hidden flex flex-col gap-y-6 my-5">
+        <InfiniteMovingCards
+          pauseOnHover={false}
+          items={skillsList.map(({ icon: Icon, name }) => (
+            <div
+              key={name}
+              className="h-[50px] w-[50px] bg-[#ebebeb] text-dark-purple rounded-md flex-center group"
+            >
+              <div className="transition-all duration-300 group-hover:text-light-purple">
+                <Icon
+                  size={46}
+                  aria-label={name}
+                  className="h-[40px] w-[40px]"
                 />
-                <InfiniteMovingCards
-                    items={logos
-                        .filter(
-                            (_, index) => index >= Math.ceil(logos.length / 2)
-                        )
-                        .map((logo, idx) => (
-                            <Image
-                                key={logo}
-                                src={logo}
-                                alt={`${logo}_${idx + 1}`}
-                                height={46}
-                                width={125.55}
-                                className="h-[46px] w-[125px]"
-                            />
-                        ))}
-                    direction="right"
-                    speed="normal"
-                />
+              </div>
             </div>
-        </section>
-    );
+          ))}
+          speed="normal"
+        />
+        <InfiniteMovingCards
+          pauseOnHover={false}
+          items={skillsList.map(({ icon: Icon, name }) => (
+            <div
+              key={name}
+              className="h-[50px] w-[50px] bg-[#ebebeb] text-dark-purple rounded-md flex-center group"
+            >
+              <div className="transition-all duration-300 group-hover:text-light-purple">
+                <Icon
+                  size={46}
+                  aria-label={name}
+                  className="h-[40px] w-[40px]"
+                />
+              </div>
+            </div>
+          ))}
+          direction="right"
+          speed="normal"
+        />
+      </div>
+    </section>
+  );
 }
 
 export default LogoGroupSection;

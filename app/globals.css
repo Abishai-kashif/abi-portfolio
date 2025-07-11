@@ -90,7 +90,7 @@
   }
 
   ._h2 {
-    @apply text-2xl md:text-3xl lg:text-5xl font-bold leading-[1.05] text-balance font-montserrat
+    @apply text-3xl md:text-5xl font-bold leading-[1.05] text-balance font-montserrat
   }
 
   ._p {

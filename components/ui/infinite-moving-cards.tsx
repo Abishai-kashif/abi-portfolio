@@ -75,32 +75,32 @@ export const InfiniteMovingCards = ({
         }
     };
     return (
-        <div
-            ref={containerRef}
-            className={cn(
-                "scroller relative z-20  max-w-screen-2xl overflow-hidden",
-                className
-            )}
+      <div
+        ref={containerRef}
+        className={cn(
+          "scroller relative z-20  max-w-screen-2xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+          className
+        )}
+      >
+        <ul
+          ref={scrollerRef}
+          className={cn(
+            " flex min-w-full shrink-0 items-center justify-between w-max flex-nowrap",
+            start && "animate-scroll ",
+            pauseOnHover && "hover:[animation-play-state:paused]"
+          )}
         >
-            <ul
-                ref={scrollerRef}
-                className={cn(
-                    " flex min-w-full shrink-0 items-center justify-between w-max flex-nowrap",
-                    start && "animate-scroll ",
-                    pauseOnHover && "hover:[animation-play-state:paused]"
-                )}
+          {items.map((item, idx) => (
+            <li
+              className="w-[180px] max-w-full relative rounded-2xl flex-shrink-0 md:w-[250px]"
+              key={idx}
             >
-                {items.map((item, idx) => (
-                    <li
-                        className="w-[180px] max-w-full relative rounded-2xl flex-shrink-0 md:w-[250px]"
-                        key={idx}
-                    >
-                        <div className="relative z-20 flex flex-row items-center">
-                            {item}
-                        </div>
-                    </li>
-                ))}
-            </ul>
-        </div>
+              <div className="relative z-20 flex flex-row items-center">
+                {item}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
     );
 };

@@ -5,21 +5,27 @@ export default function GetInTouchSection() {
   return (
     <section className="py-16 px-4">
       <div className="container-layout">
-        <h2 className="text-4xl font-bold text-center text-white mb-12">
-          Get In <span className="text-bright-purple">Touch</span>
+        <h2 className="_h2 text-center text-white mb-12">
+          Get In <span className="text-light-purple">Touch</span>
         </h2>
         <div className="max-w-2xl mx-auto">
           <Card className="bg-white/10 border-light-purple/30">
             <CardHeader>
-              <CardTitle className="text-center text-light-purple text-2xl">Let's Work Together</CardTitle>
+              <CardTitle className="text-center text-light-purple text-2xl">
+                Let's Work Together
+              </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="text-center">
                 <p className="text-white/90 mb-6">
-                  Ready to bring your ideas to life? I'd love to hear about your project.
+                  Ready to bring your ideas to life? I'd love to hear about your
+                  project.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button size="lg" className="bg-bright-purple hover:bg-accent-purple text-white">
+                  <Button
+                    size="lg"
+                    className="bg-bright-purple hover:bg-accent-purple text-white"
+                  >
                     Send Message
                   </Button>
                   <Button
@@ -50,5 +56,5 @@ export default function GetInTouchSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

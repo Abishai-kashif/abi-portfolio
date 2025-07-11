@@ -15,14 +15,14 @@ import {
 
 
 export default function Home() {
-  return ( 
+  return (
     <main className="min-h-screen bg-dark-purple/25 overflow-x-hidden">
       <div className="relative">
-      <Grid className="absolute inset-0 w-full h-full opacity-40 z-[-2]" />
-      <HeroSection />
-      <CollaboratorsNetworkSection />
+        <Grid className="absolute inset-0 w-full h-full opacity-40 z-[-2]" />
+        <HeroSection />
+        <CollaboratorsNetworkSection />
       </div>
-      <EndorsementsFeedbackSection />
+      {/* <EndorsementsFeedbackSection /> */}
       <ShowcaseOfWorkSection />
       <TechnicalProficienciesSection />
       <MyOfferingsSection />
@@ -31,5 +31,5 @@ export default function Home() {
       <MilestonesRecognitionsSection />
       <FrequentlyAskedQuestionsSection />
     </main>
-  )
+  );
 }

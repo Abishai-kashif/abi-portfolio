@@ -1,27 +1,15 @@
-import { Badge } from "@/components/ui/badge";
-import { skills } from "@/data";
+import LogoGroupSection from "../LogoGroupSection";
 
 export default function TechnicalProficienciesSection() {
   return (
-    <section className="py-16 px-4">
-      <div className="container-layout">
-        <h2 className="text-4xl font-bold text-center text-white mb-12">
-          Technical <span className="text-bright-purple">Proficiencies</span>
-        </h2>
-        <div className="max-w-4xl mx-auto">
-          <div className="flex flex-wrap gap-3 justify-center">
-            {skills.map((skill, index) => (
-              <Badge
-                key={index}
-                variant="outline"
-                className="text-lg py-2 px-4 border-light-purple text-light-purple hover:bg-light-purple hover:text-dark-purple transition-colors"
-              >
-                {skill}
-              </Badge>
-            ))}
-          </div>
-        </div>
+    <section className="2xl:container-layout min-h-[300px] relative mt-14">
+      <h2 className="_h2 text-center text-white">
+        Technical <span className="text-light-purple">Proficiencies</span>
+      </h2>
+      <div className="md:mt-20 mt-10">
+        <LogoGroupSection />
       </div>
+      <div className="absolute left-0 top-0 w-[20%] h-full bg-dark-purple/10 z-40 backdrop-blur-sm rounded-r-full hidden md:block shadow-xl shadow-accent/30" />
     </section>
-  )
+  );
 }
