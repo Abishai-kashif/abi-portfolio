@@ -128,7 +128,7 @@ export const DraggableCardBody = ({
 
         const velocityMagnitude = Math.sqrt(
           currentVelocityX * currentVelocityX +
-            currentVelocityY * currentVelocityY,
+            currentVelocityY * currentVelocityY
         );
         const bounce = Math.min(0.8, velocityMagnitude / 1000);
 
@@ -164,7 +164,7 @@ export const DraggableCardBody = ({
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       className={cn(
-        "relative h-36 w-96 overflow-hidden rounded-md bg-dark-purple/60 p-6 shadow-2xl transform-3d dark:bg-neutral-900 border-[0.5px] border-light-purple/70 backdrop-blur flex-center gap-3"
+        "relative md:h-28 md:w-96 h-24 w-80 overflow-hidden bg-dark-purple/30 md:p-5 p-3 shadow-2xl transform-3d dark:bg-neutral-900 border-[0.5px] border-light-purple/70 backdrop-blur flex-center gap-3 rounded-full"
       )}
     >
       {children}

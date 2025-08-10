@@ -1,33 +1,29 @@
-import { network } from "@/data"
-import { DraggableCardBody } from "../ui/draggable-card"
-import { Button } from "../ui/button";
+import { CardStackDemo } from "../card-stack-demo";
 import GradientBackground from "../gradient-background";
+import Underline from "../underline";
+import { Pill, PillIndicator } from "@/components/ui/kibo-ui/pill";
 
 export default function CollaboratorsNetworkSection() {
   return (
-    <section className="py-14 bg-[#050505] sm:rounded-t-[20%] 2xl:rounded-3xl border-t-[0.1px] 2xl:border-[0.1px] border-b-[0.1px] border-light-purple/50 [perspective:3000px] relative min-h-[500px] w-full overflow-clip flex-center 2xl:container-layout">
-      <h2 className="_h2 text-white z-[100] absolute top-14 text-center">
-        My <span className="text-light-purple">Collaborators Network</span>
-      </h2>
-      <Button size="lg">Contact Us</Button>
+    <section className="section-padding pb-12 bg-[#050505] [perspective:3000px] relative w-full overflow-clip">
+      <div className="flex flex-col lg:flex-row md:items-center justify-center md:justify-between 2xl:container-layout">
+        <div className="w-[100%] lg:w-[50%] mt-12 lg:mt-0">
+          <Pill className="mb-8 bg-dark-purple/20 text-white border-[0.2px] border-white/20 font-lora mx-auto">
+            <PillIndicator pulse variant="section" />
+            Feedback
+          </Pill>
+          <h2 className="_h2 text-white leading-[1.2] text-center lg:text-left">
+            What my{" "}
+            <span className="text-light-purple relative">
+              Collaborators
+              <Underline className="hidden md:inline absolute bottom-0" />
+            </span>{" "}
+            think about me
+          </h2>
+        </div>
+        <CardStackDemo />
+      </div>
       <GradientBackground />
-      {network.map((friend) => (
-        <DraggableCardBody style={friend.style} key={friend.name}>
-          <img
-            src={friend.image}
-            alt={friend.name}
-            className="rotate-90 pointer-events-none relative z-10 h-24 w-24 object-cover object-center rounded-full border-[0.5px] border-light-purple/70 flex-shrink-0"
-          />
-          <div>
-            <h3 className="text-xl font-semibold text-white mb-1">
-              {friend.name}
-            </h3>
-            <p className="font-hind text-base text-white/70 leading-tight">
-              {friend.description}
-            </p>
-          </div>
-        </DraggableCardBody>
-      ))}
     </section>
   );
 }

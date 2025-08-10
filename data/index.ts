@@ -6,6 +6,13 @@ import {
 	SiTypescript,
 	SiBootstrap,
 } from "react-icons/si";
+import {
+	AiOutlineDesktop,
+	AiOutlineApi,
+	AiOutlineRobot,
+	AiOutlineMessage,
+} from "react-icons/ai";
+import { Project } from "@/components/project-card";
 
 export const skillsList: { icon: IconType; name: string }[] = [
 	{ icon: FaHtml5, name: "html 5" },
@@ -16,6 +23,33 @@ export const skillsList: { icon: IconType; name: string }[] = [
 	{ icon: SiTailwindcss, name: "tailwind.css" },
 	{ icon: SiTypescript, name: "typescript" },
 	{ icon: SiBootstrap, name: "bootstrap" },
+];
+
+export const services = [
+	{
+		name: "Modern Frontend Development",
+		description:
+			"Crafting fast, responsive, and visually polished user interfaces using React, Next.js, and Tailwind CSS. Optimized for accessibility and SEO.",
+		icon: AiOutlineDesktop,
+	},
+	{
+		name: "Scalable Backend Architecture",
+		description:
+			"Building secure, scalable APIs and server-side systems with authentication, database design (PostgreSQL, MongoDB), and integrations like Stripe or headless CMS.",
+		icon: AiOutlineApi,
+	},
+	{
+		name: "Agentic AI Solutions",
+		description:
+			"Designing intelligent AI agents using OpenAI’s Open Agent SDK to automate workflows, interact with systems, and complete tasks autonomously.",
+		icon: AiOutlineRobot,
+	},
+	{
+		name: "Custom AI Integrations & Chatbots",
+		description:
+			"Embedding GPT‑powered chatbots and assistants into websites and apps—tailored for support, onboarding, content automation, and enterprise use cases.",
+		icon: AiOutlineMessage,
+	},
 ];
 
 export const links = [
@@ -55,56 +89,24 @@ export const faqs = [
 export const milestones = [
 	{
 		year: "2024",
-		title: "Senior Full Stack Developer",
-		description: "Promoted to senior role, leading a team of 5 developers",
+		title: "Full Stack ~ Intern",
+		description: "Crack the interview and selected as Intern at Devotic Labs",
 	},
 	{
 		year: "2023",
-		title: "Best Innovation Award",
-		description: "Recognized for developing cutting-edge solutions",
+		title: "Full Stack ~ Developer",
+		description: "Promoted to senior role, managing multiple projects",
 	},
 	{
 		year: "2022",
-		title: "100+ Projects Completed",
-		description: "Successfully delivered over 100 client projects",
+		title: "50+ Projects Completed",
+		description: "Successfully delivered over 50 projects github",
 	},
 	{
 		year: "2021",
-		title: "Tech Conference Speaker",
-		description: "Spoke at major tech conferences about modern web development",
+		title: "GIAIC Student",
+		description: "Learning cutting-edge technologies while working.",
 	},
-];
-
-export const offerings = [
-	{
-		title: "Web Development",
-		description: "Full-stack web applications using modern technologies",
-		icon: "🌐",
-	},
-	{
-		title: "Mobile Development",
-		description: "Cross-platform mobile apps with React Native",
-		icon: "📱",
-	},
-	{
-		title: "UI/UX Design",
-		description: "Beautiful and intuitive user interface designs",
-		icon: "🎨",
-	},
-	{
-		title: "Consulting",
-		description: "Technical consulting and architecture planning",
-		icon: "💡",
-	},
-];
-
-export const socialLinks = [
-	{ name: "GitHub", url: "#", icon: "🐙" },
-	{ name: "LinkedIn", url: "#", icon: "💼" },
-	{ name: "Twitter", url: "#", icon: "🐦" },
-	{ name: "Portfolio", url: "#", icon: "🌐" },
-	{ name: "Blog", url: "#", icon: "📝" },
-	{ name: "YouTube", url: "#", icon: "📺" },
 ];
 
 export const skills = [
@@ -128,87 +130,256 @@ export const skills = [
 
 export const network = [
 	{
-		name: "Tyler Durden",
-		image:
-			"https://images.unsplash.com/photo-1732310216648-603c0255c000?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		name: "Ubaid",
+		image: "friends/friend1.png",
 		style: {
 			position: "absolute" as const,
 			top: "6.5rem",
 			left: "30%",
 			rotate: "-5deg",
 		},
-		description: "Founder of Fight Club, anarchist, and soap salesman",
+		description: "Full-stack developer | Chatbot | Agentic AI",
 	},
 	{
-		name: "The Narrator",
-		image:
-			"https://images.unsplash.com/photo-1697909623564-3dae17f6c20b?q=80&w=2667&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		name: "Umer",
+		image: "friends/friend2.png",
 		style: {
 			position: "absolute" as const,
 			top: "8rem",
 			right: "5%",
 			rotate: "-7deg",
 		},
-		description: "Founder of Fight Club, anarchist, and soap salesman",
+		description: "Full-stack developer | Chatbot | Agentic AI",
 	},
 	{
-		name: "Iceland",
-		image:
-			"https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=2600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		name: "Muzaffar",
+		image: "friends/friend3.png",
 		style: {
 			position: "absolute" as const,
 			bottom: "0.1rem",
 			left: "40%",
 			rotate: "-3deg",
 		},
-		description: "Founder of Fight Club, anarchist, and soap salesman",
+		description: "Full-stack developer | Chatbot | Agentic AI",
 	},
 	{
-		name: "Japan",
-		image:
-			"https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?q=80&w=3648&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		name: "Huzair",
+		image: "friends/friend4.png",
 		style: {
 			position: "absolute" as const,
 			bottom: "8.5rem",
 			left: "35%",
 			rotate: "10deg",
 		},
-		description: "Founder of Fight Club, anarchist, and soap salesman",
+		description: "Full-stack developer | Chatbot | Agentic AI",
 	},
 	{
-		name: "Norway",
-		image:
-			"https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?q=80&w=3542&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		name: "Nadeem",
+		image: "friends/friend5.jpeg",
 		style: {
 			position: "absolute" as const,
 			bottom: "5rem",
 			right: "10%",
 			rotate: "2deg",
 		},
-		description: "Founder of Fight Club, anarchist, and soap salesman",
+		description: "Full-stack developer | Chatbot | Agentic AI",
 	},
 	{
-		name: "New Zealand",
-		image:
-			"https://images.unsplash.com/photo-1505142468610-359e7d316be0?q=80&w=3070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		name: "Abdullah",
+		image: "friends/friend6.jpeg",
 		style: {
 			position: "absolute" as const,
 			bottom: "7rem",
 			left: "-2%",
 			rotate: "-7deg",
 		},
-		description: "Founder of Fight Club, anarchist, and soap salesman",
+		description: "Full-stack developer | Chatbot | Agentic AI",
 	},
 	{
-		name: "Canada",
-		image:
-			"https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		name: "Shahab uddin",
+		image: "friends/friend7.png",
 		style: {
 			position: "absolute" as const,
 			top: "5rem",
 			left: "10%",
 			rotate: "4deg",
 		},
-		description: "Founder of Fight Club, anarchist, and soap salesman",
+		description: "Full-stack developer | Chatbot | Agentic AI",
 	},
 ];
+
+// export const projects = {
+// 	aiProjects: [
+// 		{
+// 			name: "Joker Chatbot",
+// 			description: "AI chatbot emulating Joker's witty style.",
+// 			image: "/projects/joker.png",
+
+// 			className: "sm:col-span-2",
+// 		},
+// 		{
+// 			name: "Coming Soon",
+// 			description: "coming soon......",
+// 			image: "/coming-soon.jpg",
+// 		},
+// 		{
+// 			name: "Coming Soon",
+// 			description: "coming soon......",
+// 			image: "/coming-soon.jpg",
+// 		},
+// 	],
+// 	eCommerceProjects: [
+// 		{
+// 			name: "Furniture Press",
+// 			description: "E-commerce platform for furniture.",
+// 			image: "/projects/furniture-project.png",
+// 		},
+// 		{
+// 			name: "Flexiby",
+// 			description: "E-commerce platform for flexiby yet styling clothes.",
+// 			image: "/projects/flexiby.png",
+// 			className: "sm:-row-start-2 sm:col-start-2",
+// 		},
+// 	],
+// 	moreProjects: [
+// 		{
+// 			name: "Coming Soon",
+// 			description: "coming soon......",
+// 			image: "/coming-soon.jpg",
+// 		},
+// 		{
+// 			name: "Coming Soon",
+// 			description: "coming soon......",
+// 			image: "/coming-soon.jpg",
+// 		},
+// 		{
+// 			name: "Coming Soon",
+// 			description: "coming soon......",
+// 			image: "/coming-soon.jpg",
+// 		},
+// 		{
+// 			name: "Coming Soon",
+// 			description: "coming soon......",
+// 			image: "/coming-soon.jpg",
+// 		},
+// 	],
+// };
+
+interface Projects {
+	aiProjects: Project[];
+	eCommerceProjects: Project[];
+	moreProjects: Project[];
+}
+
+export const projects: Projects = {
+	aiProjects: [
+		{
+			id: 1,
+			title: "Joker Chatbot",
+			description: "AI chatbot emulating Joker's witty style.",
+			image: "/projects/joker.png",
+			link: "https://github.com/Abishai-kashif/nextjs-dashboard.git",
+			iconLists: [
+				"icons/tail.svg",
+				"icons/ts.svg",
+				"icons/next.svg",
+				"icons/pgsql.svg",
+			],
+			className: "sm:col-span-2",
+		},
+		{
+			id: 2,
+			title: "Coming Soon",
+			description: "coming soon......",
+			image: "/coming-soon.jpg",
+			iconLists: [
+				"icons/next.svg",
+				"icons/tail.svg",
+				"icons/ts.svg",
+				"icons/fm.svg",
+			],
+			link: "https://github.com/Abishai-kashif/positivus.git",
+		},
+		{
+			id: 3,
+			title: "Coming Soon",
+			description: "coming soon......",
+			image: "/coming-soon.jpg",
+			iconLists: ["icons/next.svg", "icons/tail.svg", "icons/ts.svg"],
+			link: "https://github.com/Abishai-kashif/birthday_celebrator_for_bro.git",
+		},
+	],
+	eCommerceProjects: [
+		{
+			id: 4,
+			title: "Furniture Press",
+			description: "E-commerce platform for furniture.",
+			image: "/projects/furniture-project.png",
+			link: "https://github.com/Abishai-kashif/nextjs-dashboard.git",
+			iconLists: [
+				"icons/tail.svg",
+				"icons/ts.svg",
+				"icons/next.svg",
+				"icons/pgsql.svg",
+			],
+		},
+		{
+			id: 5,
+			title: "Flexiby",
+			description: "E-commerce platform for flexiby yet styling clothes.",
+			image: "/projects/flexiby.png",
+			iconLists: [
+				"icons/next.svg",
+				"icons/tail.svg",
+				"icons/ts.svg",
+				"icons/fm.svg",
+			],
+			link: "https://github.com/Abishai-kashif/positivus.git",
+			className: "sm:-row-start-2 sm:col-start-2",
+		},
+	],
+	moreProjects: [
+		{
+			id: 6,
+			title: "Coming Soon",
+			description: "coming soon......",
+			image: "/coming-soon.jpg",
+			link: "https://github.com/Abishai-kashif/nextjs-dashboard.git",
+			iconLists: [
+				"icons/tail.svg",
+				"icons/ts.svg",
+				"icons/next.svg",
+				"icons/pgsql.svg",
+			],
+		},
+		{
+			id: 7,
+			title: "Coming Soon",
+			description: "coming soon......",
+			image: "/coming-soon.jpg",
+			iconLists: [
+				"icons/next.svg",
+				"icons/tail.svg",
+				"icons/ts.svg",
+				"icons/fm.svg",
+			],
+			link: "https://github.com/Abishai-kashif/positivus.git",
+		},
+		{
+			id: 8,
+			title: "Coming Soon",
+			description: "coming soon......",
+			image: "/coming-soon.jpg",
+			iconLists: ["icons/next.svg", "icons/tail.svg", "icons/ts.svg"],
+			link: "https://github.com/Abishai-kashif/birthday_celebrator_for_bro.git",
+		},
+		{
+			id: 9,
+			title: "Coming Soon",
+			description: "coming soon......",
+			image: "/coming-soon.jpg",
+			iconLists: ["icons/css-3.svg", "icons/html-1.svg", "icons/ts.svg"],
+			link: "https://github.com/Abishai-kashif/resume-builder-app.git",
+		},
+	],
+};

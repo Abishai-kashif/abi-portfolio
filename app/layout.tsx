@@ -8,7 +8,7 @@ import { Montserrat, Lora, Hind_Madurai } from "next/font/google"
 
 export const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["800"],
+  weight: ["700", "800"],
   variable: "--font-montserrat",
   display: "fallback",
   fallback: ["Arial", "sans-serif"],

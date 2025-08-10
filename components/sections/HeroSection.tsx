@@ -1,13 +1,8 @@
 import { Button } from "@/components/ui/button"
-import { LucideThumbsUp } from "lucide-react"
-import Image from "next/image"
+import { LucideThumbsUp } from "lucide-react";
 import arrowDown from "react-useanimations/lib/arrowDown"
 import LogoGroupSection from "../LogoGroupSection"
 import UseAnimationsWrapper from "../use-animations-wrapper"
-
-const icons = [
-   <Image src="/placeholder-user.jpg" alt="Next.js" width={50} height={50} className="h-full w-full object-contain object-center" />,
-]
 
 export default function HeroSection() {
   return (

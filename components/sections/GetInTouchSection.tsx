@@ -1,58 +1,72 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button";
+import { MailIcon, MapPin, Phone, PhoneCall } from "lucide-react";
+import React from "react";
+import { ContactForm } from "../contact-form";
 
 export default function GetInTouchSection() {
   return (
-    <section className="py-16 px-4">
+    <section className="pt-20 pb-16 px-4">
       <div className="container-layout">
-        <h2 className="_h2 text-center text-white mb-12">
+        <h2 className="_h2 text-center text-white mb-20">
           Get In <span className="text-light-purple">Touch</span>
         </h2>
-        <div className="max-w-2xl mx-auto">
-          <Card className="bg-white/10 border-light-purple/30">
-            <CardHeader>
-              <CardTitle className="text-center text-light-purple text-2xl">
+        <div className="flex justify-center flex-col md:flex-row gap-10">
+          {/* left */}
+          <ContactForm />
+
+          {/* right */}
+          <div className="w-full h-full flex-center flex-col gap-5 min-h-[320px] flex-1">
+            <div className="bg-white/90 w-full h-full rounded-t-lg text-center p-5">
+              <h3 className="font-bold text-3xl mt-1 mb-2 text-[#050505]">
                 Let's Work Together
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="text-center">
-                <p className="text-white/90 mb-6">
-                  Ready to bring your ideas to life? I'd love to hear about your
-                  project.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button
-                    size="lg"
-                    className="bg-bright-purple hover:bg-accent-purple text-white"
-                  >
-                    Send Message
-                  </Button>
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="border-light-purple text-light-purple hover:bg-light-purple hover:text-dark-purple bg-transparent"
-                  >
-                    Schedule Call
-                  </Button>
+              </h3>
+              <p className="text-[#050505]/70">
+                Ready to bring your ideas to life? I'd love to hear about your
+                project.
+              </p>
+            </div>
+            <div className="w-full flex-center gap-5">
+              <Button size="lg" className="rounded-none w-full">
+                Send Message
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="rounded-none w-full group"
+              >
+                Schedule Call
+                <PhoneCall
+                  size={50}
+                  className="group-hover:-translate-y-0.5 group-hover:rotate-3 transition-all duration-300"
+                />
+              </Button>
+            </div>
+            <div className="bg-white/90 w-full h-full rounded-b-lg">
+              <div className="flex justify-evenly items-center text-left text-black/80 h-full p-5">
+                <div>
+                  <p className="flex-center gap-1.5">
+                    <strong className="font-semibold">Phone</strong>
+                    <Phone size={15} className="inline-block" />
+                  </p>
+                  <p>+92 (317) 264-8144</p>
+                </div>
+                <div>
+                  <p className="flex-center gap-1.5">
+                    <strong className="font-semibold">Email</strong>
+                    <MailIcon size={15} className="inline-block" />
+                  </p>
+                  <p>abishaikashif975@gmail.com</p>
+                </div>
+                <div>
+                  <p className="flex-center gap-1.5">
+                    <strong className="font-semibold">Location</strong>
+                    <MapPin size={15} className="inline-block" />
+                  </p>
+                  <p>Karachi, Sindh</p>
                 </div>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
-                <div>
-                  <p className="text-bright-purple font-semibold">Email</p>
-                  <p className="text-white/80">hello@example.com</p>
-                </div>
-                <div>
-                  <p className="text-bright-purple font-semibold">Phone</p>
-                  <p className="text-white/80">+1 (555) 123-4567</p>
-                </div>
-                <div>
-                  <p className="text-bright-purple font-semibold">Location</p>
-                  <p className="text-white/80">San Francisco, CA</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+            </div>
+          </div>
         </div>
       </div>
     </section>

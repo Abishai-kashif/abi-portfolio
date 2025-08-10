@@ -1,7 +1,6 @@
-import Grid from "@/components/grid"
+import Grid from "@/components/grid";
 import {
   CollaboratorsNetworkSection,
-  EndorsementsFeedbackSection,
   FrequentlyAskedQuestionsSection,
   GetInTouchSection,
   HeroSection,
@@ -9,16 +8,14 @@ import {
   MyOfferingsSection,
   MyOnlinePresenceSection,
   ShowcaseOfWorkSection,
-  TechnicalProficienciesSection
-} from "../components/sections"
-
-
+  TechnicalProficienciesSection,
+} from "../components/sections";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-dark-purple/25 overflow-x-hidden">
-      <div className="relative">
-        <Grid className="absolute inset-0 w-full h-full opacity-40 z-[-2]" />
+      <div className="relative overflow-hidden">
+        <Grid className="absolute inset-0 w-full h-full opacity-30 z-[-2]" />
         <HeroSection />
         <CollaboratorsNetworkSection />
       </div>

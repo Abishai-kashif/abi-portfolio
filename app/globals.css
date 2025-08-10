@@ -90,7 +90,15 @@
   }
 
   ._h2 {
-    @apply text-3xl md:text-5xl font-bold leading-[1.05] text-balance font-montserrat
+    @apply text-3xl md:text-5xl font-bold text-balance font-montserrat
+  }
+
+  ._h3 {
+    @apply text-2xl md:text-4xl font-bold text-balance font-montserrat
+  }
+
+  ._h4 {
+    @apply text-lg md:text-[22px] font-medium text-balance font-montserrat
   }
 
   ._p {
@@ -100,4 +108,12 @@
 
 .vintage {
   filter: sepia(80%) contrast(1.2) brightness(0.9);
+}
+
+.wave {
+  --mask:
+    radial-gradient(268.33px at 50% calc(100% - 360px),#000 99%,#0000 101%) calc(50% - 240px) 0/480px 100%,
+    radial-gradient(268.33px at 50% calc(100% + 240px),#0000 99%,#000 101%) 50% calc(100% - 120px)/480px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
 }
