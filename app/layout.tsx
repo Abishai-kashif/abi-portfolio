@@ -37,12 +37,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${lora.variable} ${hindMadurai.variable} antialiased`}>
+    <html
+      lang="en"
+      className={`${montserrat.variable} ${lora.variable} ${hindMadurai.variable} antialiased`}
+    >
       <body className="bg-black">
         <Header />
-          {children}
-        <Footer />
+        {children}
       </body>
     </html>
-  )
+  );
 }

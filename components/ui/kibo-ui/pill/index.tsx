@@ -10,13 +10,16 @@ export type PillProps = ComponentProps<typeof Badge> & {
 };
 
 export const Pill = ({
-  variant = 'secondary',
+  variant = "secondary",
   themed = false,
   className,
   ...props
 }: PillProps) => (
   <Badge
-    className={cn('gap-2 rounded-full px-3 py-1.5 font-normal', className)}
+    className={cn(
+      "gap-2 rounded-full px-3 py-1.5 font-normal pointer-events-none",
+      className
+    )}
     variant={variant}
     {...props}
   />
@@ -41,10 +44,7 @@ export type PillButtonProps = ComponentProps<typeof Button>;
 
 export const PillButton = ({ className, ...props }: PillButtonProps) => (
   <Button
-    className={cn(
-      '-my-2 -mr-2 size-6 rounded-full p-0.5 hover:bg-foreground/5',
-      className
-    )}
+    className={cn("-my-2 -mr-2 size-6 rounded-full p-0.5", className)}
     size="icon"
     variant="ghost"
     {...props}

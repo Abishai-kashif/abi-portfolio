@@ -10,6 +10,7 @@ import {
   ShowcaseOfWorkSection,
   TechnicalProficienciesSection,
 } from "../components/sections";
+import Footer from "@/components/layout/footer";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <MyOnlinePresenceSection />
       <MilestonesRecognitionsSection />
       <FrequentlyAskedQuestionsSection />
+      <Footer />
     </main>
   );
 }

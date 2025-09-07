@@ -5,7 +5,7 @@ function GradientBackground({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "absolute inset-0 bg-gradient-to-b from-transparent to-dark-purple/50 z-[-2]",
+        "absolute inset-0 bg-gradient-to-b from-transparent to-dark-purple/50 pointer-events-none z-[-2]",
         className
       )}
     />

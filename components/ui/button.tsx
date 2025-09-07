@@ -5,15 +5,16 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md w-52 transition-colors focus-visible:outline-none  disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border text-lg lg:text-xl lg:font-medium flex-center transition-all duration-300 text-white/90",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md w-52 transition-colors focus-visible:outline-none  disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border text-lg lg:text-xl lg:font-medium flex-center transition-all duration-300 text-white/90 hover:scale-105",
   {
     variants: {
       variant: {
-        default: "bg-dark-purple/70 text-white hover:bg-dark-purple/90",
+        default:
+          "bg-gradient-to-b from-light-purple to-dark-purple text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset] border-light-purple",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
-          "bg-transparent text-white hover:bg-dark-purple/70  ",
+          "bg-transparent text-white hover:bg-white/90 border border-white hover:text-[#050505]",
         secondary:
           "bg-white text-dark-purple hover:bg-white/90 bg-dark-purple/70",
         ghost: "hover:bg-dark-purple border-none",
@@ -31,7 +32,7 @@ const buttonVariants = cva(
       size: "default",
     },
   }
-)
+);
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,

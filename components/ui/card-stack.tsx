@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Quote } from "lucide-react";
+import GradientBackground from "../gradient-background";
 
 let interval: any;
 
@@ -38,7 +39,7 @@ export const CardStack = ({
         newArray.unshift(newArray.pop()!); // move the last element to the front
         return newArray;
       });
-    }, 5000);
+    }, 4000);
   };
 
   return (
@@ -47,7 +48,7 @@ export const CardStack = ({
         return (
           <motion.div
             key={card.id}
-            className="absolute h-80 rounded-3xl p-5 shadow-xl border-[0.5px] border-white/20 shadow-black/[0.1] flex flex-col items-center backdrop-blur bg-dark-purple/30 text-center"
+            className="absolute h-80 rounded-3xl p-5 shadow-xl border-[0.5px] border-white/20 shadow-black/[0.1] bg-[#050505]/80 flex flex-col items-center backdrop-blur text-center"
             style={{
               transformOrigin: "top center",
             }}
@@ -57,11 +58,12 @@ export const CardStack = ({
               zIndex: cards.length - index,
             }}
           >
+            <GradientBackground className="rounded-3xl" />
             <Quote className="text-light-purple fill-light-purple text-4xl mb-7 mt-5" />
             <div className="font-medium text-white text-lg sm:text-xl">
               {card.content}
             </div>
-            <div className="absolute -bottom-7 left-0 right-0 flex-center flex-col gap-y-1">  
+            <div className="absolute -bottom-7 left-0 right-0 flex-center flex-col gap-y-1">
               <div>
                 <p className="font-bold text-white leading-tight">
                   {card.name}

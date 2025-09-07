@@ -6,27 +6,27 @@ import { Twitter, Linkedin, Github, Instagram, Facebook } from "lucide-react";
 // Sample socialLinks data (replace with actual data from "@/data")
 const socialLinks = [
   {
-    url: "https://twitter.com",
+    url: "https://x.com/abishai_k11572",
     icon: <Twitter className="w-6 h-6" />,
     name: "Twitter",
   },
   {
-    url: "https://linkedin.com",
+    url: "https://www.linkedin.com/in/abishai-k-b482362ba/",
     icon: <Linkedin className="w-6 h-6" />,
     name: "LinkedIn",
   },
   {
-    url: "https://github.com",
+    url: "https://github.com/Abishai-kashif",
     icon: <Github className="w-6 h-6" />,
     name: "GitHub",
   },
   {
-    url: "https://instagram.com",
+    url: "https://www.instagram.com/abi_zeries_official/",
     icon: <Instagram className="w-6 h-6" />,
     name: "Instagram",
   },
   {
-    url: "https://facebook.com",
+    url: "https://www.facebook.com/abishai.kashif.2025/",
     icon: <Facebook className="w-6 h-6" />,
     name: "Facebook",
   },
@@ -34,7 +34,7 @@ const socialLinks = [
 
 export default function MyOnlinePresenceSection() {
   return (
-    <section className="py-16 px-4 min-h-[50vh] flex items-center">
+    <section className="pt-16 pb-32 px-4 min-h-[50vh] flex items-center">
       <div className="max-w-5xl mx-auto text-center">
         <motion.h2
           initial={{ opacity: 0, y: -30 }}

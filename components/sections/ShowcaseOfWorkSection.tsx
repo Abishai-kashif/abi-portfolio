@@ -101,7 +101,10 @@ const cards = [
 
 export default function ShowcaseOfWorkSection() {
   return (
-    <section className="py-24 pb-14 flex-center relative [perspective:3000px] bg-[#050505]">
+    <section
+      className="py-24 pb-14 flex-center relative [perspective:3000px] bg-[#050505]"
+      id="work"
+    >
       <div className="absolute top-0 left-2/3 flex h-8 items-start overflow-hidden -translate-x-1/2">
         <div className="-mt-px flex h-[2px] w-80 -scale-x-100">
           <div className="w-full flex-none blur-xs [background-image:linear-gradient(90deg,rgba(255,178,0,0)_0%,#FFB200_32.29%,rgba(236,72,153,0.25)_67.19%,rgba(236,72,153,0)_100%)]"></div>
@@ -125,7 +128,7 @@ export default function ShowcaseOfWorkSection() {
         <div className="pt-20">
           <CardCarousel
             cards={cards}
-            autoplayDelay={4000}
+            autoplayDelay={3000}
             showNavigation={true}
           />
         </div>
