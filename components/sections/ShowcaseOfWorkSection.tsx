@@ -3,30 +3,24 @@ import { Pill, PillIndicator } from "@/components/ui/kibo-ui/pill";
 import GradientBackground from "../gradient-background";
 import Underline from "../underline";
 
-// const images = [
-//   { src: "/projects/flexiby.png", alt: "Image 1" },
-//   { src: "/projects/furniture-project.png", alt: "Image 2" },
-//   { src: "/projects/joker.png", alt: "Image 3" },
-// ];
-
 const cards = [
   {
-    title: "Flexiby - E-Commerce Platform",
+    title: "LearnXai - AI Student learning companion",
     description:
-      "How to design with gestures and motion that feel intuitive and natural.",
-    src: "/projects/flexiby.png",
+      "AI-based student learning companion with seamless conversations, quiz assessments and student progress analytics.",
+    src: "/projects/learnxai.png",
     iconList: [
       "icons/tail.svg",
       "icons/ts.svg",
       "icons/next.svg",
       "icons/pgsql.svg",
     ],
-    link: "https://flexiby.vercel.app/",
+    link: "https://joker-master-agent.vercel.app/",
   },
   {
     title: "Furniture Press - E-Commerce Platform",
     description:
-      "How to design with gestures and motion that feel intuitive and natural.",
+      "Advance e-commerce platform for furniture shops with features like wishlist, authentication & many more.",
     src: "/projects/furniture-project.png",
     iconList: [
       "icons/tail.svg",
@@ -39,7 +33,7 @@ const cards = [
   {
     title: "Joker - AI based Chatbot",
     description:
-      "How to design with gestures and motion that feel intuitive and natural.",
+      "A fun joker that will light up your mood if you're bored :)",
     src: "/projects/joker.png",
     iconList: [
       "icons/tail.svg",
@@ -48,6 +42,19 @@ const cards = [
       "icons/pgsql.svg",
     ],
     link: "https://joker-master-agent.vercel.app/",
+  },
+  {
+    title: "Flexiby - E-Commerce Platform",
+    description:
+      "Flexible e-commerce platform to buy your fav clothings & accessories.",
+    src: "/projects/flexiby.png",
+    iconList: [
+      "icons/tail.svg",
+      "icons/ts.svg",
+      "icons/next.svg",
+      "icons/pgsql.svg",
+    ],
+    link: "https://flexiby.vercel.app/",
   },
 ];
 

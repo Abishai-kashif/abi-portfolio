@@ -62,7 +62,7 @@ export const faqs = [
 	{
 		question: "What technologies do you specialize in?",
 		answer:
-			"I specialize in modern web technologies including React, Next.js, TypeScript, Node.js, and various cloud platforms. I'm always learning new technologies to stay current with industry trends.",
+			"I specialize in modern web technologies including MERN, TypeScript, N8N, Openai agents SDK and various AI-based technologies. I'm always learning new technologies to stay current with industry trends.",
 	},
 	{
 		question: "How long does a typical project take?",

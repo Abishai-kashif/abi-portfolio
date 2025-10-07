@@ -32,39 +32,36 @@ export const Highlight = ({
 const CARDS = [
   {
     id: 0,
-    name: "Manu Arora",
+    name: "Abdullah",
     designation: "Senior Software Engineer",
     content: (
       <p>
-        These cards are amazing, <Highlight>I want to use them</Highlight> in my
-        project. Framer motion is a godsend ngl tbh fam 🙏
+        Me and Abishai is working on same project - He didn't just technically performed well but he also very <Highlight>understandable</Highlight>, working with him is very easy. If you're looking for a Developer <Highlight>don't miss the opportunity to work with him</Highlight>
       </p>
     ),
+    imageUrl: "/friends/friend2.png",
   },
   {
     id: 1,
-    name: "Elon Musk",
-    designation: "Senior Shitposter",
+    name: "Muhammad Ubaid Hussain",
+    designation: "Full-Stack AI Engineer",
+    imageUrl: "/friends/friend1.png",
     content: (
       <p>
-        I dont like this Twitter thing,{" "}
-        <Highlight>deleting it right away</Highlight> because yolo. Instead, I
-        would like to call it <Highlight>X.com</Highlight> so that it can easily
-        be confused with adult sites.
+        I've recently have worked with him on our <Highlight>Hackathon Project</Highlight> and his technical knowledge is soo deep 🔥
+        If you have project he is a right person to reach
       </p>
     ),
   },
   {
     id: 2,
-    name: "Tyler Durden",
-    designation: "Manager Project Mayhem",
+    name: "Nadeem Khan",
+    designation: "Software Engineer",
+    imageUrl: "/friends/friend5.jpeg",
     content: (
       <p>
-        The first rule of
-        <Highlight> Fight Club</Highlight> is that you do not talk about fight
-        club. The second rule of
-        <Highlight> Fight club</Highlight> is that you DO NOT TALK about fight
-        club.
+        We are working in same working place and the experience with Abishai so far <Highlight>has been Great</Highlight>
+        I highly recommend him
       </p>
     ),
   },
