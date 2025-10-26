@@ -134,11 +134,11 @@ export default function BentoGrid() {
               size={item.size}
               className={cn(
                 item.size === 'large'
-                  ? 'col-span-4'
+                  ? 'sm:col-span-4'
                   : item.size === 'medium'
-                    ? 'col-span-3'
-                    : 'col-span-2',
-                'h-full',
+                    ? 'sm:col-span-3'
+                    : 'sm:col-span-2',
+                'h-full col-span-1',
               )}
             />
         ))}
