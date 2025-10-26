@@ -36,7 +36,7 @@ const CARDS = [
     designation: "Senior Software Engineer",
     content: (
       <p>
-        Me and Abishai is working on same project - He didn't just technically performed well but he also very <Highlight>understandable</Highlight>, working with him is very easy. If you're looking for a Developer <Highlight>don't miss the opportunity to work with him</Highlight>
+        Abishai is skilled, easy to work with, and <Highlight>highly reliable</Highlight>. Don’t miss the chance to work with him.
       </p>
     ),
     imageUrl: "/friends/friend2.png",
