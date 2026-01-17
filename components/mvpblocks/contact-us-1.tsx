@@ -3,7 +3,6 @@
 import { Button } from '@/components/ui/button';
 import Earth from '@/components/ui/globe';
 import { Label } from '@/components/ui/label';
-import { SparklesCore } from '@/components/ui/sparkles';
 import { motion, useInView } from 'framer-motion';
 import { Check, Loader2, Mail, MessageSquare, User } from 'lucide-react';
 import { useRef, useState } from 'react';
@@ -24,15 +23,29 @@ export default function ContactUs() {
 
     try {
       // Perform form submission logic here
-      console.log('Form submitted:', { name, email, message });
-      await new Promise((resolve) => setTimeout(resolve, 1000));
       setName('');
       setEmail('');
       setMessage('');
       setIsSubmitted(true);
-      setTimeout(() => {
-        setIsSubmitted(false);
-      }, 5000);
+
+      const payload = {
+        subject: `${name}`,
+        from: email,
+        text: message,
+        html: `<div>${message}</div>`
+      }
+
+      const response = await fetch("/api/send", {
+        method: "POST",
+        body: JSON.stringify(payload)
+      })
+
+      const data = await response.json()
+      if (!response.ok || !data?.success) {
+        throw Error("Unexpected response while sending email")
+      }
+
+
     } catch (error) {
       console.error('Error submitting form:', error);
     } finally {
