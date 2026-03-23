@@ -19,7 +19,7 @@ function LogoGroupSection() {
               </div>
             </div>
           ))}
-          speed="normal"
+          speed="slow"
         />
       </div>
 
@@ -41,7 +41,7 @@ function LogoGroupSection() {
               </div>
             </div>
           ))}
-          speed="normal"
+          speed="slow"
         />
         <InfiniteMovingCards
           pauseOnHover={false}
@@ -60,7 +60,7 @@ function LogoGroupSection() {
             </div>
           ))}
           direction="right"
-          speed="normal"
+          speed="slow"
         />
       </div>
     </section>

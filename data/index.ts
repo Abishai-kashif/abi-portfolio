@@ -1,10 +1,28 @@
 import type { IconType } from "react-icons";
-import { FaHtml5, FaCss3, FaJs, FaReact } from "react-icons/fa";
+import {
+	FaHtml5,
+	FaCss3,
+	FaJs,
+	FaReact,
+	FaGithub,
+	FaGitAlt,
+} from "react-icons/fa";
 import {
 	SiNextdotjs,
 	SiTailwindcss,
 	SiTypescript,
 	SiBootstrap,
+	SiPython,
+	SiNodedotjs,
+	SiAngular,
+	SiVuedotjs,
+	SiPostman,
+	SiMongodb,
+	SiPostgresql,
+	SiDocker,
+	SiVercel,
+	SiPrisma,
+	SiExpress,
 } from "react-icons/si";
 import {
 	AiOutlineDesktop,
@@ -12,17 +30,32 @@ import {
 	AiOutlineRobot,
 	AiOutlineMessage,
 } from "react-icons/ai";
-import { Project } from "@/components/project-card";
 
 export const skillsList: { icon: IconType; name: string }[] = [
-	{ icon: FaHtml5, name: "html 5" },
-	{ icon: FaCss3, name: "css 3" },
-	{ icon: FaJs, name: "javascript" },
-	{ icon: FaReact, name: "react.js" },
-	{ icon: SiNextdotjs, name: "next.js" },
-	{ icon: SiTailwindcss, name: "tailwind.css" },
-	{ icon: SiTypescript, name: "typescript" },
-	{ icon: SiBootstrap, name: "bootstrap" },
+	{ icon: FaHtml5, name: "HTML 5" },
+	{ icon: FaCss3, name: "CSS 3" },
+	{ icon: FaJs, name: "JavaScript" },
+	{ icon: FaReact, name: "React.js" },
+	{ icon: SiNextdotjs, name: "Next.js" },
+	{ icon: SiTailwindcss, name: "Tailwind CSS" },
+	{ icon: SiTypescript, name: "TypeScript" },
+	{ icon: SiBootstrap, name: "Bootstrap" },
+	{ icon: SiAngular, name: "Angular" },
+	{ icon: SiVuedotjs, name: "Vue.js" },
+	{ icon: SiPostman, name: "Postman" },
+	{ icon: SiPython, name: "Python" },
+	{ icon: SiNodedotjs, name: "Node.js" },
+	{ icon: SiExpress, name: "Express.js" },
+	{ icon: SiPostgresql, name: "PostgreSQL" },
+	{ icon: SiMongodb, name: "MongoDB" },
+	{ icon: SiDocker, name: "Docker" },
+	{ icon: SiPrisma, name: "Prisma" },
+	{ icon: SiVercel, name: "Vercel" },
+	{ icon: FaGitAlt, name: "Git" },
+	{ icon: FaGithub, name: "GitHub" },
+	{ icon: AiOutlineDesktop, name: "Responsive Web Design" },
+	{ icon: AiOutlineApi, name: "API Integration" },
+	{ icon: AiOutlineRobot, name: "Claude Code" },
 ];
 
 export const services = [
@@ -73,11 +106,6 @@ export const faqs = [
 		question: "Do you work with clients remotely?",
 		answer:
 			"Yes, I work with clients worldwide remotely. I use modern collaboration tools and maintain regular communication to ensure project success regardless of location.",
-	},
-	{
-		question: "What is your development process?",
-		answer:
-			"I follow an agile development process with regular check-ins, iterative development, and continuous feedback. This ensures the final product meets your expectations and requirements.",
 	},
 	{
 		question: "Do you provide ongoing support?",

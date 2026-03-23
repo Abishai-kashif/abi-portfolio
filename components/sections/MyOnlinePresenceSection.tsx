@@ -11,7 +11,7 @@ const socialLinks = [
     name: "Twitter",
   },
   {
-    url: "https://www.linkedin.com/in/abishai-k-b482362ba/",
+    url: "https://www.linkedin.com/in/abi-x-me/",
     icon: <Linkedin className="w-6 h-6" />,
     name: "LinkedIn",
   },
@@ -21,7 +21,7 @@ const socialLinks = [
     name: "GitHub",
   },
   {
-    url: "https://www.instagram.com/abi_zeries_official/",
+    url: "https://www.instagram.com/abishai.kashif/",
     icon: <Instagram className="w-6 h-6" />,
     name: "Instagram",
   },
