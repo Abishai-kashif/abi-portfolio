@@ -2,35 +2,15 @@
 
 import { motion } from "framer-motion";
 import { Twitter, Linkedin, Github, Instagram, Facebook } from "lucide-react";
+import { socialLinks } from "@/data";
 
-// Sample socialLinks data (replace with actual data from "@/data")
-const socialLinks = [
-  {
-    url: "https://x.com/abishai_k11572",
-    icon: <Twitter className="w-6 h-6" />,
-    name: "Twitter",
-  },
-  {
-    url: "https://www.linkedin.com/in/abi-x-me/",
-    icon: <Linkedin className="w-6 h-6" />,
-    name: "LinkedIn",
-  },
-  {
-    url: "https://github.com/Abishai-kashif",
-    icon: <Github className="w-6 h-6" />,
-    name: "GitHub",
-  },
-  {
-    url: "https://www.instagram.com/abishai.kashif/",
-    icon: <Instagram className="w-6 h-6" />,
-    name: "Instagram",
-  },
-  {
-    url: "https://www.facebook.com/abishai.kashif.2025/",
-    icon: <Facebook className="w-6 h-6" />,
-    name: "Facebook",
-  },
-];
+const iconMap = {
+  Twitter: <Twitter className="w-6 h-6" />,
+  LinkedIn: <Linkedin className="w-6 h-6" />,
+  GitHub: <Github className="w-6 h-6" />,
+  Instagram: <Instagram className="w-6 h-6" />,
+  Facebook: <Facebook className="w-6 h-6" />,
+};
 
 export default function MyOnlinePresenceSection() {
   return (
@@ -66,7 +46,7 @@ export default function MyOnlinePresenceSection() {
             >
               <div className="relative w-full h-full flex items-center justify-center bg-dark-purple/50 rounded-[20px] border border-purple-400/30 group-hover:bg-purple-500/20 group-hover:shadow-[0_0_15px_rgba(168,85,247,0.5)] transition-all duration-300 transform-gpu group-hover:scale-110">
                 <span className="text-purple-300 group-hover:text-white transition-colors">
-                  {link.icon}
+                  {iconMap[link.icon as keyof typeof iconMap]}
                 </span>
                 <div className="absolute inset-0 rounded-[20px] border-2 border-transparent group-hover:border-light-purple transition-all duration-300" />
               </div>

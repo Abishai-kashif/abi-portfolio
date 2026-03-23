@@ -1,6 +1,7 @@
 import GradientBackground from "../gradient-background";
 import { SparklesCore } from "@/components/ui/sparkles";
 import MainLogo from "./main-logo";
+import { socialLinks } from "@/data";
 
 function Footer() {
   return (
@@ -27,7 +28,7 @@ function Footer() {
                 Work
               </a>
               <a href="#skills" className="text-sm hover:underline">
-                Sills
+                Skills
               </a>
               <a href="#contact" className="text-sm hover:underline">
                 Contact
@@ -35,24 +36,15 @@ function Footer() {
             </div>
             <div className="flex flex-col gap-5">
               <div className="font-bold">Social media</div>
-              <a
-                href="https://x.com/abishai_k11572"
-                className="text-sm hover:underline"
-              >
-                Twitter
-              </a>
-              <a
-                href="https://github.com/Abishai-kashif"
-                className="text-sm hover:underline"
-              >
-                GitHub
-              </a>
-              <a
-                href="https://www.linkedin.com/in/abishai-k-b482362ba/"
-                className="text-sm hover:underline"
-              >
-                LinkedIn
-              </a>
+              {socialLinks.slice(0, 3).map((social) => (
+                <a
+                  key={social.name}
+                  href={social.url}
+                  className="text-sm hover:underline"
+                >
+                  {social.name}
+                </a>
+              ))}
             </div>
           </div>
           <p className="text-sm mt-14">

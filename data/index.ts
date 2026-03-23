@@ -91,6 +91,34 @@ export const links = [
 	{ name: "Contact Me", path: "#contact" },
 ];
 
+export const socialLinks = [
+	{
+		url: "https://x.com/abishai_k11572",
+		icon: "Twitter",
+		name: "Twitter",
+	},
+	{
+		url: "https://www.linkedin.com/in/abi-x-me/",
+		icon: "LinkedIn",
+		name: "LinkedIn",
+	},
+	{
+		url: "https://github.com/Abishai-kashif",
+		icon: "GitHub",
+		name: "GitHub",
+	},
+	{
+		url: "https://www.instagram.com/abishai.kashif/",
+		icon: "Instagram",
+		name: "Instagram",
+	},
+	{
+		url: "https://www.facebook.com/abishai.kashif.2025/",
+		icon: "Facebook",
+		name: "Facebook",
+	},
+];
+
 export const faqs = [
 	{
 		question: "What technologies do you specialize in?",
