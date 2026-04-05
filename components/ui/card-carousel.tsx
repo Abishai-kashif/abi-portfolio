@@ -2,6 +2,7 @@
 
 import React from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
+import Image from "next/image"
 
 import "swiper/css"
 import "swiper/css/effect-coverflow"
@@ -145,7 +146,7 @@ export const CardCarousel: React.FC<CarouselProps> = ({
                               }}
                             >
                               <GradientBackground />
-                              <img src={icon?.src} alt={icon?.name} className="p-2" />
+                              <Image src={icon?.src} alt={icon?.name} width={32} height={32} className="p-2" />
                             </div>
                           ))}
                         </div>
@@ -169,14 +170,14 @@ export const CardCarousel: React.FC<CarouselProps> = ({
                         <div className="flex items-center ml-auto">
                           {item.iconList.map((icon, idx) => (
                             <div
-                              key={icon}
+                              key={icon.name}
                               className="border shadow shadow-light-purple border-light-purple/[0.2] rounded-full bg-[#050505] lg:w-8 lg:h-8 w-8 h-8 flex items-center justify-center overflow-hidden relative"
                               style={{
                                 transform: `translateX(-${5 * idx * 2}px)`,
                               }}
                             >
                               <GradientBackground />
-                              <img src={icon} alt={icon} className="p-2" />
+                              <Image src={icon.src} alt={icon.name} width={32} height={32} className="p-2" />
                             </div>
                           ))}
                         </div>

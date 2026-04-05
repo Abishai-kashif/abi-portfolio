@@ -11,7 +11,7 @@ export const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["700", "800"],
   variable: "--font-montserrat",
-  display: "fallback",
+  display: "swap",
   fallback: ["Arial", "sans-serif"],
 });
 
@@ -141,6 +141,8 @@ export default function RootLayout({
     >
       <head>
         <StructuredData />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body className="bg-black">
         <Header />

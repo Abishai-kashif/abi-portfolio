@@ -1,7 +1,12 @@
-import { CardStackDemo } from "../card-stack-demo";
+import dynamic from "next/dynamic";
 import GradientBackground from "../gradient-background";
 import Underline from "../underline";
 import { Pill, PillIndicator } from "@/components/ui/kibo-ui/pill";
+
+const CardStackDemo = dynamic(
+  () => import("../card-stack-demo").then((mod) => mod.CardStackDemo),
+  { loading: () => <div className="h-[25rem] lg:h-[32rem] w-[100%] lg:w-[50%]" /> }
+);
 
 export default function CollaboratorsNetworkSection() {
   return (

@@ -47,7 +47,7 @@ export default function HeroSection() {
             {/* buttons */}
             <div className="flex-center flex-wrap gap-x-7 gap-y-3">
               <Button size="lg" variant="outline" asChild>
-                <Link href="#work" aria-label="View my portfolio work">View My Work</Link>
+                <Link href="#work" aria-label="View My Work">View My Work</Link>
               </Button>
               <Button size="lg" className="group text-white/90" asChild>
                 <Link href="#contact" aria-label="Get in touch via contact form">

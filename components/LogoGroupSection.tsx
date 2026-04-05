@@ -1,5 +1,13 @@
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
+import dynamic from "next/dynamic";
 import { skillsList } from "@/data";
+
+const InfiniteMovingCards = dynamic(
+  () =>
+    import("@/components/ui/infinite-moving-cards").then(
+      (mod) => mod.InfiniteMovingCards
+    ),
+  { loading: () => <div className="h-[60px] w-full" /> }
+);
 
 function LogoGroupSection() {
   return (

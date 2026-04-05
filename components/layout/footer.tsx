@@ -1,7 +1,12 @@
 import GradientBackground from "../gradient-background";
-import { SparklesCore } from "@/components/ui/sparkles";
+import dynamic from "next/dynamic";
 import MainLogo from "./main-logo";
 import { socialLinks } from "@/data";
+
+const SparklesCore = dynamic(
+  () => import("@/components/ui/sparkles").then((mod) => mod.SparklesCore),
+  { loading: () => <div className="absolute inset-0 top-0" /> }
+);
 
 function Footer() {
   return (

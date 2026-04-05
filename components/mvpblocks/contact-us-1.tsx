@@ -1,11 +1,15 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
-import Earth from '@/components/ui/globe';
+import dynamic from 'next/dynamic';
 import { Label } from '@/components/ui/label';
 import { motion, useInView } from 'framer-motion';
 import { Check, Loader2, Mail, MessageSquare, User } from 'lucide-react';
 import { useRef, useState } from 'react';
+
+const Earth = dynamic(() => import('@/components/ui/globe'), {
+  loading: () => <div className="w-full h-full min-h-[350px]" />
+});
 
 export default function ContactUs() {
   const [name, setName] = useState('');

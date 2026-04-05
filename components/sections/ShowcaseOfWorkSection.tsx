@@ -1,7 +1,12 @@
-import { CardCarousel } from "@/components/ui/card-carousel";
+import dynamic from "next/dynamic";
 import { Pill, PillIndicator } from "@/components/ui/kibo-ui/pill";
 import GradientBackground from "../gradient-background";
 import Underline from "../underline";
+
+const CardCarousel = dynamic(
+  () => import("@/components/ui/card-carousel").then((mod) => mod.CardCarousel),
+  { loading: () => <div className="min-h-[400px]" /> }
+);
 
 const cards = [
   {
