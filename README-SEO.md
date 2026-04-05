@@ -229,7 +229,7 @@ Your Open Graph image is **critical** for social sharing. Here's how to create i
 - **Location:** `public/og-image.png`
 
 ### What to Include
-1. Your name: "Abishai K."
+1. Your name: "Abishai Kashif"
 2. Your title: "Full-Stack Developer & AI Solutions Architect"
 3. Key technologies: React, Next.js, TypeScript, AI
 4. Your photo (optional but recommended)
@@ -246,7 +246,7 @@ Your Open Graph image is **critical** for social sharing. Here's how to create i
 │                                                     │
 │              [Your Photo - 200×200]                 │
 │                                                     │
-│                   Abishai K.                        │
+│                   Abishai Kashif                        │
 │        Full-Stack Developer & AI Solutions          │
 │                   Architect                         │
 │                                                     │

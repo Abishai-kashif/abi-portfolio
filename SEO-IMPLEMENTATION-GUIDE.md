@@ -166,7 +166,7 @@ Your OG image is crucial for social sharing. Here's how to create one:
 - **Safe zone**: Keep important content in center 1200x600px
 
 ### What to Include
-1. Your name: "Abishai K."
+1. Your name: "Abishai Kashif"
 2. Your title: "Full-Stack Developer & AI Solutions Architect"
 3. Key technologies: React, Next.js, TypeScript, AI
 4. Your photo (optional but recommended)
@@ -184,7 +184,7 @@ Your OG image is crucial for social sharing. Here's how to create one:
 │                                         │
 │         [Your Photo]                    │
 │                                         │
-│      Abishai K.                         │
+│      Abishai Kashif                         │
 │      Full-Stack Developer &             │
 │      AI Solutions Architect             │
 │                                         │

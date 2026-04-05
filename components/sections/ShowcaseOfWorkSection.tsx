@@ -1,7 +1,12 @@
-import { CardCarousel } from "@/components/ui/card-carousel";
+import dynamic from "next/dynamic";
 import { Pill, PillIndicator } from "@/components/ui/kibo-ui/pill";
 import GradientBackground from "../gradient-background";
 import Underline from "../underline";
+
+const CardCarousel = dynamic(
+  () => import("@/components/ui/card-carousel").then((mod) => mod.CardCarousel),
+  { loading: () => <div className="min-h-[400px]" /> }
+);
 
 const cards = [
   {
@@ -10,12 +15,12 @@ const cards = [
       "AI-based student learning companion with seamless conversations, quiz assessments and student progress analytics.",
     src: "/projects/learnxai.png",
     iconList: [
-      "icons/tail.svg",
-      "icons/ts.svg",
-      "icons/openai.svg",
-      "icons/fastapi.svg",
-      "icons/next.svg",
-      "icons/mongodb.svg",
+      { src: "icons/tail.svg", name: "Tailwind CSS" },
+      { src: "icons/ts.svg", name: "TypeScript" },
+      { src: "icons/openai.svg", name: "OpenAI" },
+      { src: "icons/fastapi.svg", name: "FastAPI" },
+      { src: "icons/next.svg", name: "Next.js" },
+      { src: "icons/mongodb.svg", name: "MongoDB" },
     ],
     link: "https://github.com/Abishai-kashif/learnxai/tree/feature/authentication-implemented",
   },
@@ -25,11 +30,11 @@ const cards = [
       "Advance e-commerce platform for furniture shops with features like wishlist, authentication & many more.",
     src: "/projects/furniture-project.png",
     iconList: [
-      "icons/tail.svg",
-      "icons/ts.svg",
-      "icons/stripe.svg",
-      "icons/next.svg",
-      "icons/sanity.svg",
+      { src: "icons/tail.svg", name: "Tailwind CSS" },
+      { src: "icons/ts.svg", name: "TypeScript" },
+      { src: "icons/stripe.svg", name: "Stripe" },
+      { src: "icons/next.svg", name: "Next.js" },
+      { src: "icons/sanity.svg", name: "Sanity" },
     ],
     link: "https://furniture-press.vercel.app/",
   },
@@ -39,11 +44,11 @@ const cards = [
       "A fun joker that will light up your mood if you're bored :)",
     src: "/projects/joker.png",
     iconList: [
-      "icons/tail.svg",
-      "icons/ts.svg",
-      "icons/next.svg",
-      "icons/fastapi.svg",
-      "icons/openai.svg",
+      { src: "icons/tail.svg", name: "Tailwind CSS" },
+      { src: "icons/ts.svg", name: "TypeScript" },
+      { src: "icons/next.svg", name: "Next.js" },
+      { src: "icons/fastapi.svg", name: "FastAPI" },
+      { src: "icons/openai.svg", name: "OpenAI" },
     ],
     link: "https://joker-master-agent.vercel.app/",
   },
@@ -53,11 +58,11 @@ const cards = [
       "Flexible e-commerce platform to buy your fav clothings & accessories.",
     src: "/projects/flexiby.png",
     iconList: [
-      "icons/tail.svg",
-      "icons/ts.svg",
-      "icons/stripe.svg",
-      "icons/next.svg",
-      "icons/sanity.svg",
+      { src: "icons/tail.svg", name: "Tailwind CSS" },
+      { src: "icons/ts.svg", name: "TypeScript" },
+      { src: "icons/stripe.svg", name: "Stripe" },
+      { src: "icons/next.svg", name: "Next.js" },
+      { src: "icons/sanity.svg", name: "Sanity" },
     ],
     link: "https://flexiby.vercel.app/",
   },

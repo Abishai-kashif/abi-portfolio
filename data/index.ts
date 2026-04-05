@@ -98,7 +98,7 @@ export const socialLinks = [
 		name: "Twitter",
 	},
 	{
-		url: "https://www.linkedin.com/in/abi-x-me/",
+		url: "https://www.linkedin.com/in/abiverse/",
 		icon: "LinkedIn",
 		name: "LinkedIn",
 	},

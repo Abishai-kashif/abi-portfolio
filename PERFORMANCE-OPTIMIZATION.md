@@ -239,7 +239,7 @@ export function ProjectSchema({ project }) {
     url: project.link,
     author: {
       '@type': 'Person',
-      name: 'Abishai K.',
+      name: 'Abishai Kashif',
     },
   };
 
