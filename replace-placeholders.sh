@@ -14,12 +14,23 @@ YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
 # Function to prompt for input
+# prompt_input() {
+#     local prompt_text=$1
+#     local example=$2
+#     echo -e "${YELLOW}$prompt_text${NC}"
+#     echo -e "Example: $example"
+#     read -p "> " input
+#     echo "$input"
+# }
 prompt_input() {
     local prompt_text=$1
     local example=$2
-    echo -e "${YELLOW}$prompt_text${NC}"
-    echo -e "Example: $example"
-    read -p "> " input
+
+    echo -e "${YELLOW}$prompt_text${NC}" >&2
+    echo -e "Example: $example" >&2
+    printf "> " >&2
+
+    read input
     echo "$input"
 }
 

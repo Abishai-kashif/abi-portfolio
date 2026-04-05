@@ -22,10 +22,10 @@ function NavLinks() {
   return (
     <>
       {/* nav links desktop */}
-      <nav className="hidden md:inline-block">
+      <nav className="hidden md:inline-block" aria-label="Main navigation">
         <ul className="flex items-center gap-x-10 text-white/70 font-hind text-balance tracking-wide leading-none mt-0.5">
           {links.map((link) => (
-            <Link href={link.path} key={link.path}>
+            <Link href={link.path} key={link.path} aria-label={link.name}>
               <li>{link.name}</li>
             </Link>
           ))}
@@ -45,7 +45,7 @@ function NavLinks() {
 
         {/* custom nav links mobile that expands header */}
         {open && (
-          <div className=" basis-full">
+          <div className=" basis-full" role="navigation" aria-label="Mobile navigation">
             <ul className="flex-center flex-col gap-y-2 text-white font-hind text-balance tracking-wide leading-none pb-4 pt-7 text-lg">
               {links.map((link) => (
                 <Button
@@ -56,7 +56,7 @@ function NavLinks() {
                   className="w-full hover:bg-dark-purple/50 p-0"
                   onClick={() => setOpen(false)}
                 >
-                  <Link href={link.path} className="text-center">
+                  <Link href={link.path} className="text-center" aria-label={link.name}>
                     <li>{link.name}</li>
                   </Link>
                 </Button>

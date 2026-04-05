@@ -42,7 +42,7 @@ export const CardCarousel: React.FC<CarouselProps> = ({
     width: 100%;
     padding-bottom: 50px;
   }
-  
+
   .swiper-slide {
     background-position: center;
     background-size: cover;
@@ -50,13 +50,13 @@ export const CardCarousel: React.FC<CarouselProps> = ({
     height: 300px;
     /* margin: 20px; */
   }
-  
+
   .swiper-slide img {
     display: block;
     width: 100%;
   }
-  
-  
+
+
   .swiper-3d .swiper-slide-shadow-left {
     background-image: none;
   }
@@ -138,14 +138,14 @@ export const CardCarousel: React.FC<CarouselProps> = ({
                         <div className="flex items-center ml-auto">
                           {item.iconList.map((icon, idx) => (
                             <div
-                              key={icon}
+                              key={icon.name}
                               className="border shadow shadow-light-purple border-light-purple/[0.2] rounded-full bg-[#050505] lg:w-8 lg:h-8 w-8 h-8 flex items-center justify-center overflow-hidden relative"
                               style={{
                                 transform: `translateX(-${5 * idx * 2}px)`,
                               }}
                             >
                               <GradientBackground />
-                              <img src={icon} alt={icon} className="p-2" />
+                              <img src={icon?.src} alt={icon?.name} className="p-2" />
                             </div>
                           ))}
                         </div>

@@ -18,13 +18,15 @@ export const montserrat = Montserrat({
 export const lora = Lora({
   subsets: ["cyrillic-ext", "symbols"],
   weight: ["400", "500", "600", "700"],
-  variable: "--font-lora"
+  variable: "--font-lora",
+  display: "swap",
 })
 
 export const hindMadurai = Hind_Madurai({
   subsets: ["tamil", "latin-ext"],
   weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-hind-madurai"
+  variable: "--font-hind-madurai",
+  display: "swap",
 })
 
 // Viewport configuration (required as separate export in Next.js 14+)
@@ -40,10 +42,10 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://[YOUR-DOMAIN].com'),
+  metadataBase: new URL('https://abiverse.vercel.app'),
   title: {
-    default: 'Abishai K. | Full-Stack Developer & AI Solutions Architect',
-    template: '%s | Abishai K.',
+    default: 'Abishai Kashif | Full-Stack Developer & AI Solutions Architect',
+    template: '%s | Abishai Kashif',
   },
   description: 'Full-stack developer specializing in React, Next.js, TypeScript, Node.js, and AI-driven applications. Building luxury web experiences and intelligent AI solutions with modern technologies.',
   keywords: [
@@ -68,29 +70,29 @@ export const metadata: Metadata = {
     'Abishai K',
     'Abishai Kashif',
   ],
-  authors: [{ name: 'Abishai K.', url: 'https://[YOUR-DOMAIN].com' }],
-  creator: 'Abishai K.',
-  publisher: 'Abishai K.',
+  authors: [{ name: 'Abishai Kashif', url: 'https://abiverse.vercel.app' }],
+  creator: 'Abishai Kashif',
+  publisher: 'Abishai Kashif',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://[YOUR-DOMAIN].com',
-    siteName: 'Abishai K. Portfolio',
-    title: 'Abishai K. | Full-Stack Developer & AI Solutions Architect',
+    url: 'https://abiverse.vercel.app',
+    siteName: 'Abishai Kashif Portfolio',
+    title: 'Abishai Kashif | Full-Stack Developer & AI Solutions Architect',
     description: 'Full-stack developer specializing in React, Next.js, TypeScript, and AI-driven applications. Building luxury web experiences and intelligent solutions.',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Abishai K. - Full-Stack Developer Portfolio',
+        alt: 'Abishai Kashif - Full-Stack Developer Portfolio',
         type: 'image/png',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Abishai K. | Full-Stack Developer & AI Solutions Architect',
+    title: 'Abishai Kashif | Full-Stack Developer & AI Solutions Architect',
     description: 'Building luxury web experiences and intelligent AI solutions with React, Next.js, TypeScript, and modern technologies.',
     creator: '@abishai_k11572',
     images: ['/og-image.png'],

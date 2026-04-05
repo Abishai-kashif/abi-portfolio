@@ -75,7 +75,7 @@ export const CardStack = ({
               </div>
               <div className="flex-center p-2 rounded-full bg-dark-purple/50 border-[0.5px] border-white/20">
                 <Avatar className="size-12 border-[0.2px] border-white/20">
-                  <AvatarImage src={card.imageUrl} />
+                  <AvatarImage src={card.imageUrl} alt={card?.name} />
                   <AvatarFallback>CN</AvatarFallback>
                 </Avatar>
               </div>
