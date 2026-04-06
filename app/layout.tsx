@@ -42,7 +42,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://abiverse.vercel.app'),
+  metadataBase: new URL('https://abishaikashif.vercel.app'),
   title: {
     default: 'Abishai Kashif | Full-Stack Developer & AI Solutions Architect',
     template: '%s | Abishai Kashif',
@@ -70,13 +70,13 @@ export const metadata: Metadata = {
     'Abishai K',
     'Abishai Kashif',
   ],
-  authors: [{ name: 'Abishai Kashif', url: 'https://abiverse.vercel.app' }],
+  authors: [{ name: 'Abishai Kashif', url: 'https://abishaikashif.vercel.app' }],
   creator: 'Abishai Kashif',
   publisher: 'Abishai Kashif',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://abiverse.vercel.app',
+    url: 'https://abishaikashif.vercel.app',
     siteName: 'Abishai Kashif Portfolio',
     title: 'Abishai Kashif | Full-Stack Developer & AI Solutions Architect',
     description: 'Full-stack developer specializing in React, Next.js, TypeScript, and AI-driven applications. Building luxury web experiences and intelligent solutions.',
@@ -112,9 +112,8 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: '[GOOGLE-SEARCH-CONSOLE-VERIFICATION-CODE]',
-    // yandex: '[YANDEX-VERIFICATION-CODE]',
-    // bing: '[BING-VERIFICATION-CODE]',
+    google: 'xBMJGe-8E8fAUz4TZRA2lYTXHWolKQHkK6fvB-k5KCg',
+    bing: '07045C53276D3347869FC7E32A1CBF04',
   },
   category: 'technology',
   manifest: '/manifest.json',

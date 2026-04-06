@@ -66,17 +66,13 @@ export const CardStack = ({
             </div>
             <div className="absolute -bottom-7 left-0 right-0 flex-center flex-col gap-y-1">
               <div>
-                <p className="font-bold text-white leading-tight">
-                  {card.name}
-                </p>
-                <p className="font-medium text-white/70 text-sm">
-                  {card.designation}
-                </p>
+                <p className="font-bold text-white leading-tight">{card.name}</p>
+                <p className="font-medium text-white/70 text-sm">{card.designation}</p>
               </div>
-              <div className="flex-center p-2 rounded-full bg-dark-purple/50 border-[0.5px] border-white/20">
-                <Avatar className="size-12 border-[0.2px] border-white/20">
-                  <AvatarImage src={card.imageUrl} alt={card?.name} />
-                  <AvatarFallback>CN</AvatarFallback>
+              <div className="flex-center p-2 rounded-full bg-dark-purple/50 border-b-[0.5px] border-b-white/20 shadow-sm">
+                <Avatar className="size-12 border-b-[0.2px] border-b-white/20">
+                  <AvatarImage src={card?.imageUrl} alt={card?.name} />
+                  <AvatarFallback className="bg-dark-purple text-white">{card.name?.[0]}</AvatarFallback>
                 </Avatar>
               </div>
             </div>

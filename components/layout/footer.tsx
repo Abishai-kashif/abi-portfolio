@@ -5,20 +5,20 @@ import { socialLinks } from "@/data";
 
 const SparklesCore = dynamic(
   () => import("@/components/ui/sparkles").then((mod) => mod.SparklesCore),
-  { loading: () => <div className="absolute inset-0 top-0" /> }
+  { loading: () => <div className="absolute inset-0 top-0 pointer-events-none" /> }
 );
 
 function Footer() {
   return (
     <div className="mt-10">
-      <footer className="min-h-[300px] max-w-5xl mx-auto rounded-t-3xl container-layout pt-10 pb-4 transition-all duration-300  text-white border-[0.1px] border-light-purple/80 relative bg-[#050505] overflow-hidden">
+      <footer className="min-h-[300px] max-w-[1184px] mx-auto rounded-t-3xl container-layout pt-10 pb-4 transition-all duration-300 text-white border-[0.1px] border-light-purple/80 relative bg-[#050505] overflow-hidden">
         <GradientBackground className="z-10" />
         <SparklesCore
           id="tsparticles2"
           background="transparent"
           minSize={0.6}
           maxSize={1.4}
-          particleDensity={500}
+          particleDensity={300}
           className="absolute inset-0 top-0 pointer-events-none"
           particleColor="#ac6bbe"
         />
