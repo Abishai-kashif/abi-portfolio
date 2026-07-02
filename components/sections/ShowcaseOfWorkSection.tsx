@@ -22,7 +22,7 @@ const cards = [
       { src: "icons/next.svg", name: "Next.js" },
       { src: "icons/mongodb.svg", name: "MongoDB" },
     ],
-    link: "https://github.com/Abishai-kashif/learnxai/tree/feature/authentication-implemented",
+    link: "https://github.com/Abishai-kashif/learnxai/",
   },
   {
     title: "Furniture Press - E-Commerce Platform",
